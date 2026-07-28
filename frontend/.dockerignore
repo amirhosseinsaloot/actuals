@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+npm-debug.log*
+.env
+.env.*
+!.env.example
+
+# Tests run on the host, not in the image.
+lib/*.test.ts
+vitest.config.ts

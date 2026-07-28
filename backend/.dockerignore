@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+.env
+.env.*
+!.env.example
+
+# The runtime image serves the API and nothing else. Tests and the tooling
+# they need run on the host (see requirements-dev.txt), so none of this is
+# built into the image.
+budgets/tests/
+conftest.py
+requirements-dev.txt
+pyproject.toml
